@@ -13,20 +13,8 @@ import pandas as pd
 import psutil
 from sklearn.tree import DecisionTreeClassifier
 
-from mctspy.games.examples.generate_crew_games import SUITS, DECK, DECK_SIZE, CrewStatePublic, create_board_state, \
-    features_from_game_state
-# from mctspy.games.examples.crew_game_state import SUITS, DECK, DECK_SIZE, CrewStatePublic
-# from mctspy.games.examples.crew_node import FEATURE_DICT_BASE, card_list_to_series, \
-#     card_series_to_list
-from mctspy.games.examples.crew_node_determinization import CooperativeGameNodeDet
-# from mctspy.games.examples.permutation3 import swap
-
-
-
-# implement communication signal
-
-from mctspy.tree.nodes import MonteCarloTreeSearchNode
-from mctspy.tree.search import MonteCarloTreeSearch
+from game_state import SUITS, DECK, create_board_state, features_from_game_state
+from node import CooperativeGameNodeDet
 
 EPSILON = 0.000000000001
 

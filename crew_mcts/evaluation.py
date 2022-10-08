@@ -12,10 +12,9 @@ import time
 
 import psutil
 
-from mctspy.games.examples.crew_node_determinization import CooperativeGameNodeDet
-from mctspy.games.examples.crew_solveable import MCTSCrewSolver
-from mctspy.games.examples.generate_crew_games import SUITS, DECK, DECK_SIZE, CrewStatePublic, create_board_state, \
-    features_from_game_state
+from node import CooperativeGameNodeDet
+from mcts import MCTSCrewSolver
+from game_state import SUITS, DECK, DECK_SIZE, CrewStatePublic
 
 
 def game_from_beginning(seed, players, num_goals, model):

@@ -5,12 +5,7 @@ import pandas as pd
 from copy import copy, deepcopy
 
 
-
-
-
-
-from mctspy.games.examples.crew_game_state import SUITS, DECK, CrewStatePublic
-from mctspy.games.examples.integer_programming import initial_sample
+from game_state import CrewStatePublic
 
 
 
