@@ -10,7 +10,9 @@ from game_state import CrewStatePublic
 
 
 class CooperativeGameNodeDet():
-
+    """
+    This class is modelled off of the MonteCarloTreeSearchNode object in https://github.com/int8/monte-carlo-tree-search
+    """
     def __init__(self, state, parent=None, parent_action=None, root=False):
         self.state = state
         self.parent = parent

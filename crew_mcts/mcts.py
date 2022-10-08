@@ -22,6 +22,9 @@ EPSILON = 0.000000000001
 
 
 class MCTSCrewSolver():
+    """
+    This class is modelled off of the MonteCarloTreeSearch object in https://github.com/int8/monte-carlo-tree-search
+    """
     def __init__(self, node, model):
         self.root = node
         self.model = model
@@ -94,7 +97,7 @@ if __name__ == '__main__':
         seed_end = 1000  # int(sys.argv[4])
         max_rows_per_export = 100000
 
-        parent_path = r'G:\Users\DavidK\analyses_not_project_specific\20220831_simulation_results\20220918_results_take2'
+        parent_path = r'results'
 
         model = None
         if round < 13:
